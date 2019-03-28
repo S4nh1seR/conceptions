@@ -11,9 +11,8 @@ int main() {
     Assembler asm_obj;
     asm_obj.make_bytecode(program_path, bytecode_path);
 
-//    std::cout << "have made bytecode" << std::endl;
     VirtualMachine VM;
-    VM.exec_program("/home/alexandr/CLionProjects/Assembler/fib.bin");
+    VM.exec_program(bytecode_path);
 
     Disassembler disasm_obj;
     disasm_obj.make_program(dis_program_path, bytecode_path);

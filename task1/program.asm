@@ -1,4 +1,5 @@
-data intro Hello, enter index of number!
+data intro Hello, I will help you to find fibonacci number!
+data suggest Please, enter the index of number!
 
 jlabel base
 pop res
@@ -34,6 +35,7 @@ return
 
 begin
 prints #intro
+prints #suggest
 read reg1
 push reg1
 push_ra
